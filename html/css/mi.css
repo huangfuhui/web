@@ -547,9 +547,9 @@
     transition: all 0.2s linear;
 }
 
-.item:hover{
+.item:hover {
     transform: translateY(-2px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .item img {
@@ -557,14 +557,15 @@
     width: 160px;
 }
 
-.item-name{
+.item-name {
     width: 214px;
     height: 21px;
     color: #333;
     line-height: 21px;
     margin: 0 auto 2px;
 }
-.item-desc{
+
+.item-desc {
     width: 214px;
     height: 18px;
     color: #b0b0b0;
@@ -573,7 +574,118 @@
     margin: 0 auto 10px;
 }
 
-.item-price{
+.item-price {
     color: #ff6700;
     font-size: 14px;
+}
+
+.video-title>h3 {
+    font-size: 22px;
+    text-align: left;
+    line-height: 58px;
+    color: #333;
+}
+
+.video-list {
+    width: 100%;
+    height: 299px;
+}
+
+.video-list>ul>li {
+    float: left;
+    margin-right: 14px;
+    transition: all 0.3s;
+}
+
+.video-list>ul>li:last-of-type {
+    margin-right: 0;
+}
+
+.video-list>ul>li>div:last-child {
+    background-color: #fff;
+    height: 105px;
+}
+
+.video-desc>p:first-of-type {
+    color: #333;
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 33px;
+    margin-bottom: 6px;
+}
+
+.video-desc>p:last-of-type {
+    color: #b0b0b0;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.video-list>ul>li>div:first-of-type {
+    position: relative;
+}
+
+.video-play-button {
+    position: absolute;
+    width: 32px;
+    height: 20px;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    left: 20px;
+    bottom: 20px;
+}
+
+.video-play-button>div {
+    width: 0;
+    height: 0;
+    border-left: 8px solid #fff;
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    margin: 4px auto;
+}
+
+.video-list>ul>li:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+    transform: translateY(-2px);
+}
+
+.video-list>ul>li:hover .video-play-button {
+    border: 2px solid #ff6700;
+    background-color: #ff6700;
+}
+
+.footer {
+    background-color: #f5f5f5;
+}
+
+.service {
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.service>ul {
+    overflow: hidden;
+}
+
+.service>ul>li {
+    float: left;
+    border-right: 1px solid #b0b0b0;
+    width: 240.4px;
+    transition: all 0.2S;
+}
+
+.service>ul>li:last-of-type {
+    border-right: none;
+}
+
+.service>ul>li i {
+    font-size: 24px;
+    margin-right: 6px;
+}
+
+.service a {
+    color: #616161;
+}
+
+.service>ul>li:hover * {
+    color: #ff6700;
 }
