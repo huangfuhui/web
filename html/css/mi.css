@@ -160,10 +160,15 @@
     margin-top: 25px;
 }
 
-.nav-logo>img {
+.nav-logo>img:first-of-type {
     width: 56px;
     margin-top: 22px;
-    margin-left: 50px;
+}
+
+.nav-logo>img:last-of-type {
+    width: 165px;
+    height: 55px;
+    margin-top: 22px;
 }
 
 .nav-list>ul>li {
@@ -688,4 +693,82 @@
 
 .service>ul>li:hover * {
     color: #ff6700;
+}
+
+.contact {
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.contact-link {
+    width: 960px;
+}
+
+.contact-link>ul {
+    width: 160px;
+    float: left;
+    color: #424242;
+    font-size: 14px;
+    line-height: 1.25;
+    text-align: left;
+}
+
+.contact-link>ul>li {
+    margin-top: 10px;
+}
+
+.contact-link>ul>li>a {
+    color: #757575;
+    font-size: 12px;
+}
+
+.contact-number {
+    width: 250px;
+    border-left: 1px solid #e0e0e0;
+    float: right;
+}
+
+.phone-num {
+    font-size: 22px;
+    line-height: 22px;
+    color: #ff6700;
+    margin-bottom: 5px;
+}
+
+.phone-time {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #616161;
+}
+
+.customer-service {
+    border: 1px solid #ff6700;
+    height: 30px;
+    width: 120px;
+    line-height: 30px;
+    box-sizing: border-box;
+    color: #ff6700;
+    margin: 0 auto;
+    transition: all 0.2s;
+    font-size: 12px;
+    display: block;
+}
+
+.customer-service:hover {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+.contact-number>div>span {
+    color: #616161;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.contact-number>div>img {
+    width: 24px;
+    height: 24px;
+    margin-left: 6px;
+    position: relative;
+    top: 7px;
 }
